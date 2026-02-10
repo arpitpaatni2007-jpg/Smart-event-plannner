@@ -1,9 +1,9 @@
-📅 Smart Event Dashboard
+# 📅 Smart Event Dashboard
 
 A simple and interactive Smart Event Dashboard built using HTML, CSS, and JavaScript (DOM Manipulation only).
 This project allows users to create, view, and manage events dynamically in the browser.
 
-🚀 Features
+# 🚀 Features
 
 Create events with:
 
@@ -29,7 +29,7 @@ Input validation with user-friendly alerts
 
 Responsive and modern UI
 
-🛠️ Technologies Used
+# 🛠️ Technologies Used
 
 HTML5 – Structure and layout
 
@@ -39,7 +39,7 @@ JavaScript (DOM Manipulation) – Dynamic behavior and interactivity
 
 ❗ No frameworks, no libraries, no APIs, and no backend are used.
 
-📂 Project Structure
+# 📂 Project Structure
 Smart-Event-Dashboard/
 │
 ├── index.html      # Main HTML structure
@@ -50,7 +50,7 @@ Smart-Event-Dashboard/
 
 └── README.md       # Project documentation
 
-⚙️ How It Works
+# ⚙️ How It Works
 
 User fills the event form and clicks Add Event
 
@@ -74,7 +74,7 @@ innerHTML
 
 addEventListener
 
-▶️ How to Run the Project
+# ▶️ How to Run the Project
 
 Download or clone the repository
 
@@ -86,12 +86,12 @@ Start adding and managing events
 
 No additional setup is required.
 
-🎓 Academic Note
+# 🎓 Academic Note
 
 This project is developed strictly within the scope of DOM manipulation, as per academic requirements.
 Advanced concepts like databases, APIs, frameworks, or persistent storage are intentionally avoided.
 
-📌 Possible Enhancements
+# 📌 Possible Enhancements
 
 Edit existing events
 
@@ -101,12 +101,12 @@ Add dark mode
 
 Improve accessibility
 
-👨‍💻 Author
+# 👨‍💻 Author
 
 Arpit Patni
 B.Tech – Web Development Assignment
 Smart Event Dashboard Project
 
-✅ License
+# ✅ License
 
 This project is created for educational purposes only.
