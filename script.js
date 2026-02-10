@@ -48,9 +48,11 @@ sample.onclick = () => {
 
 
 clear.onclick = () => {
-  events = []
-  save()
-  render()
+  if (confirm("Are you sure you want to clear all events?")) {
+    events = []
+    save()
+    render()
+  }
 }
 
 function render() {
@@ -64,7 +66,7 @@ function render() {
       <h3>${e.title}</h3>
       <div class="date">🗓️ ${e.date}</div>
       <div class="badge">${e.category}</div>
-      <p>${e.desc}</p>
+     <p>${e.desc || "No description provided"}</p>
       <button class="remove">×</button>
     `
 
