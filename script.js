@@ -13,6 +13,7 @@ let events = []
 
 render()
 
+
 add.onclick = () => {
   if (!title.value || !date.value || !category.value) {
   alert("Please fill all required fields")
@@ -78,6 +79,9 @@ function render() {
 
     cards.appendChild(div)
   })
+
+  const counter = document.getElementById('counter')
+  counter.innerText = `Total Events: ${events.length}`
 }
 
 function save() {}
