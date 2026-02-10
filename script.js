@@ -7,7 +7,9 @@ const clear = document.getElementById('clear')
 const sample = document.getElementById('sample')
 const cards = document.getElementById('cards')
 
-let events = JSON.parse(localStorage.getItem('events')) || []
+let events = []
+
+
 
 render()
 
@@ -20,14 +22,14 @@ add.onclick = () => {
 
   events.push({
     id: Date.now(),
-    title: title.value,
+    title: title.value.trim(),
     date: date.value,
     category: category.value,
-    desc: desc.value
+    desc: desc.value.trim()
   })
 
   save()
-  reset()
+  resetForm()
   render()
 }
 
@@ -76,9 +78,8 @@ function render() {
   })
 }
 
-function save() {
-  localStorage.setItem('events', JSON.stringify(events))
-}
+function save() {}
+ 
 
 function resetForm() {
   title.value = ""
