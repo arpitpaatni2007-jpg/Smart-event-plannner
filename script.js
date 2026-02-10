@@ -12,7 +12,11 @@ let events = JSON.parse(localStorage.getItem('events')) || []
 render()
 
 add.onclick = () => {
-  if (!title.value || !date.value || !category.value) return
+  if (!title.value || !date.value || !category.value) {
+  alert("Please fill all required fields")
+  return
+}
+
 
   events.push({
     id: Date.now(),
