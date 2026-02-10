@@ -34,15 +34,16 @@ add.onclick = () => {
 sample.onclick = () => {
   events.push({
     id: Date.now(),
-    title: 'Sample Event',
-    date: '2026-02-09',
-    category: 'Workshop',
-    desc: 'This is a sample event description.'
+    title: "Sample Workshop",
+    date: "2026-02-10",
+    category: "Workshop",
+    desc: "This is a demo event added for preview."
   })
 
   save()
   render()
 }
+
 
 clear.onclick = () => {
   events = []
