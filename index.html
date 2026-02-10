@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Event Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Smart Event Dashboard</h1>
+    </header>
+
+    <section class="layout">
+      <aside class="creator">
+        <h2>Create Event</h2>
+
+        <input id="title" type="text" placeholder="Event title" />
+        <input id="date" type="date" />
+
+        <select id="category">
+          <option value="">Select category</option>
+          <option>Function</option>
+          <option>Seminar</option>
+          <option>Workshop</option>
+          <option>Festival</option>
+          <option>Social</option>
+        </select>
+
+        <textarea id="desc" placeholder="Event description"></textarea>
+
+        <button id="add">Add Event</button>
+        <button id="sample">Add Sample</button>
+      </aside>
+
+      <main class="events">
+        <div class="events-head">
+          <h2>Events</h2>
+          <button id="clear">Clear All</button>
+        </div>
+
+        <div class="cards" id="cards"></div>
+      </main>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

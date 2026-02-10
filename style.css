@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #8fb7ff, #9ee7e1);
+    min-height: 100vh;
+}
+
+.topbar {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.layout {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.creator {
+    width: 320px;
+    background: aliceblue;
+    padding: 20px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.creator h2 {
+    text-align: center;
+    color: #4361ee;
+}
+
+.creator input,
+.creator select,
+.creator textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.creator textarea {
+    resize: none;
+    height: 70px;
+}
+
+.creator button {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(135deg, #2e5aac, #6b5cff);
+    color: white;
+}
+
+.creator button:hover {
+    opacity: 0.9;
+}
+
+.events {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.events-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.events-head h2 {
+    color: #4361ee;
+}
+
+#clear {
+    background: #ff5c5c;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cards {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: linear-gradient(120deg, #ffe5d9, #fff0f3);
+    padding: 15px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.card .date {
+    font-size: 13px;
+    font-weight: bold;
+    color: #222;
+}
+
+.badge {
+    display: inline-block;
+    background: #6b5cff;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 6px 0;
+}
+
+.remove {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: none;
+    background: #ff5c5c;
+    color: white;
+    cursor: pointer;
+}
