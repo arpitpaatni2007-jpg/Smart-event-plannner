@@ -79,9 +79,9 @@ function save() {
   localStorage.setItem('events', JSON.stringify(events))
 }
 
-function reset() {
-  title.value = ''
-  date.value = ''
-  category.value = ''
-  desc.value = ''
+function resetForm() {
+  title.value = ""
+  date.value = ""
+  category.value = ""
+  desc.value = ""
 }
